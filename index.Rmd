@@ -8,6 +8,10 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(ggplot2)
+library(ggExtra)
+library("readxl")
+HpResults <- read_excel("HpResults.xlsx")
 ```
 
 Introduction
@@ -19,13 +23,13 @@ Introduction
 Column {data-width=550}
 -----------------------------------------------------------------------
 
-### Background
+### Motivation
 
 ```{r}
 
 ```
 
-### To Name
+### Background
 
 ```{r}
 
@@ -35,7 +39,7 @@ Column {data-width=550}
 Column {data-width=1750}
 -----------------------------------------------------------------------
 
-### Chart B
+### Main Graph
 
 ```{r}
 
@@ -45,13 +49,13 @@ Column {data-width=1750}
 Column {data-width = 10}
 -----------------------------------------------------------------------
 
-### Chart C
+### Introduction
 ```{r}
 ```
 
 
 
-Main Research
+Methodology
 =======================================================================
 
 
@@ -87,23 +91,102 @@ Column {data-width = 10}
 
 ### Music 1
 ```{r}
-````
+```
 
 ### Music 2
 ```{r}
-````
+```
 
-### Music 3
 ```{r}
-````
+```
 
 ### Music 4
 ```{r}
-````
+```
 
 
 Results
 =======================================================================
+
+Column {.tabset}
+-----------------------------------------------------------------------
+
+### <font color="#000000">No Music</font> 
+
+```{r}
+  p = ggplot(HpResults, aes(SC2, SC3)) + geom_point()
+  ggMarginal(p, type="histogram")
+```
+
+```{r}
+par(mfrow =c(1,2))
+hist(HpResults$SC2, main = "Correct Answers in Test Video", xlab = "Number of Correct Answers")
+hist(HpResults$SC3, main = "Wrong Answers in Test Video", xlab = "Number of Wrong Answers")
+```
+
+
+### <font color="#`000000">Beta Waves</font> 
+```{r}
+  p = ggplot(HpResults, aes(SC4, SC5)) + geom_point()
+  ggMarginal(p, type="histogram")
+```
+
+### <font color="#`000000">Classical Music</font>
+
+```{r}
+  p = ggplot(HpResults, aes(SC6, SC7)) + geom_point()
+  ggMarginal(p, type="histogram")
+  
+```
+
+```{r}
+
+```
+
+### <font color="#`000000">Pop Music</font> 
+```{r}
+  p = ggplot(HpResults, aes(SC10, SC11)) + geom_point()
+  ggMarginal(p, type="histogram")
+```
+
+### <font color="#`000000">Rock Music</font> 
+```{r}
+  p = ggplot(HpResults, aes(SC12, SC13)) + geom_point()
+  ggMarginal(p, type="histogram")
+```
+
+
+Column {.tabset}
+-----------------------------------------------------------------------
+
+### <font color="#000000">No Music</font> 
+
+```{r}
+par(mfrow =c(1,2))
+hist(HpResults$SC2, main = "Correct Answers", xlab = "Number of Correct Answers")
+hist(HpResults$SC3, main = "Wrong Answers", xlab = "Number of Wrong Answers")
+```
+
+
+
+### <font color="#`000000">Beta Waves</font> 
+```{r}
+```
+
+### <font color="#`000000">Classical Music</font>
+
+```{r}
+```
+
+
+### <font color="#`000000">Pop Music</font> 
+```{r}
+```
+
+### <font color="#`000000">Rock Music</font> 
+```{r}
+```
+
 
 Conclusion
 =======================================================================
