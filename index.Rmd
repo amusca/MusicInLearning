@@ -25,25 +25,27 @@ Column {data-width=550}
 
 ### Motivation
 
-```{r}
+<b>Adel</b>
 
-```
+I often listen to music while studying and have always wondered whether I can utilize different genres and types of music to speed up the process of memorizing new information and help me study better. I'm curious about whether a catchy tune or a relaxing melody can actually make a difference in how we learn and recall information. Our study is all about finding out how the music we listen to can shape the way our brains work when we're trying to remember and recall information. It's a mix of my love for music and a natural curiosity about how it impacts our minds in daily life.
 
-### Background
+<b>Ana-Maria</b>
 
-```{r}
+<b>Aron</b>
 
-```
+<b>Nienke</b>
 
 
-Column {data-width=1750}
+
+Column {data-width=1550}
 -----------------------------------------------------------------------
 
 ### Main Graph
 
-```{r}
+<div>
+  <img src="mainChart.png" width = "700" height = "420" />
 
-```
+</div>
 
 
 Column {data-width = 10}
@@ -64,22 +66,21 @@ Column {data-width=550}
 -----------------------------------------------------------------------
 
 
-### Background
+### Description
 
 ```{r}
 ```
 
-### A1
-
-```{r}
-
-```
 
 
-Column {data-width=1750}
+Column {data-width=1350}
 -----------------------------------------------------------------------
 
-### Chart B
+### 
+<div>
+  <img src="methodology.jpg" width = "650" height = "700" />
+
+</div>
 
 ```{r}
 
@@ -90,13 +91,14 @@ Column {data-width = 10}
 -----------------------------------------------------------------------
 
 ### Music 1
-```{r}
-```
+
+<iframe src="https://open.spotify.com/embed/playlist/7mWbXdE4Hky7MIt8BOjryX?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 ### Music 2
 ```{r}
 ```
 
+### Music 3
 ```{r}
 ```
 
@@ -111,7 +113,7 @@ Results
 Column {.tabset}
 -----------------------------------------------------------------------
 
-### <font color="#000000">No Music</font> 
+### <font color="#000000">Control</font> 
 
 ```{r}
   p = ggplot(HpResults, aes(SC2, SC3)) + geom_point()
@@ -159,34 +161,104 @@ hist(HpResults$SC3, main = "Wrong Answers in Test Video", xlab = "Number of Wron
 Column {.tabset}
 -----------------------------------------------------------------------
 
-### <font color="#000000">No Music</font> 
+### <font color="#000000">Control</font> 
 
 ```{r}
 par(mfrow =c(1,2))
-hist(HpResults$SC2, main = "Correct Answers", xlab = "Number of Correct Answers")
-hist(HpResults$SC3, main = "Wrong Answers", xlab = "Number of Wrong Answers")
+hist(HpResults$SC2, main = "Correct Answers", xlab = "Number of Correct Answers", col = "#8080ff")
+hist(HpResults$SC3, main = "Wrong Answers", xlab = "Number of Wrong Answers", col = "#99bbff")
 ```
 
 
 
 ### <font color="#`000000">Beta Waves</font> 
 ```{r}
+  par(mfrow =c(1,2))
+hist(HpResults$SC4, main = "Correct Answers", xlab = "Number of Correct Answers", col = "#66ffc2")
+hist(HpResults$SC5, main = "Wrong Answers", xlab = "Number of Wrong Answers", col = "#80ff80")
 ```
 
 ### <font color="#`000000">Classical Music</font>
 
 ```{r}
+  par(mfrow =c(1,2))
+hist(HpResults$SC6, main = "Correct Answers", xlab = "Number of Correct Answers", col = "darkblue")
+hist(HpResults$SC7, main = "Wrong Answers", xlab = "Number of Wrong Answers", col="lightblue")
 ```
 
 
 ### <font color="#`000000">Pop Music</font> 
 ```{r}
+par(mfrow =c(1,2))
+hist(HpResults$SC10, main = "Correct Answers", xlab = "Number of Correct Answers", col = "#dd99ff")
+hist(HpResults$SC11, main = "Wrong Answers", xlab = "Number of Wrong Answers", col = "#ecb3ff")
 ```
 
 ### <font color="#`000000">Rock Music</font> 
 ```{r}
+  par(mfrow =c(1,2))
+hist(HpResults$SC12, main = "Correct Answers", xlab = "Number of Correct Answers", col = "#ff4d4d")
+hist(HpResults$SC13, main = "Wrong Answers", xlab = "Number of Wrong Answers", col = "#ff5c33")
 ```
 
 
+Column
+----------------------------------------------------------------------------------
+
+### Description
+
+<b>Control</b>
+
+<b>Beta Waves</b>
+
+<b>Classical Music</b>
+
+<b>Pop Music</b>
+
+<b>Rock Music</b>
+
 Conclusion
 =======================================================================
+
+
+
+Column
+----------------------------------------------------------------------
+
+### ANOVA
+
+For Beta waves vs Control: The p-value is higher than 0.05, indicating no statistically significant difference. 
+
+For Classical vs Control and Pop vs Control: The p-values are lower than 0.05, suggesting statistically significant differences in scores when compared to the control group.
+
+For Rock vs Control: The p-value is close to 0.05, indicating a trend towards significance, but it's not conclusively significant at the standard 0.05 level. 
+
+Therefore, based on this analysis, the genres "Classical" and "Pop" show statistically significant differences in scores compared to the control group, whereas "Beta waves" and "Rock" do not demonstrate statistically significant differences at the conventional 0.05 level.
+
+For Control vs Beta waves: The p-value is higher than 0.05, suggesting no statistically significant difference.
+
+For Classical vs Beta waves, Pop vs Beta waves, and Rock vs Beta waves: The p-values are lower than 0.05, indicating statistically significant differences in scores when compared to the Beta waves group.
+
+Thus, in this analysis, the genres "Classical", "Pop", and "Rock" show statistically significant differences in scores compared to the Beta waves group.
+
+
+### Table Control
+
+<img src="Table vs Control.png" width = "650" height = "700" />
+
+
+### Table Beta Waves
+
+<img src="TableVsBeta.png" width = "650" height = "700" />
+
+
+Column {data-width=1050}
+-----------------------------------------------------------------------
+
+### Conclusion & Discussion
+
+
+Column
+----------------------------------------------------------------------
+
+### Limitation
