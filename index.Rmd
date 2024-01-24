@@ -35,9 +35,10 @@ I often listen to music while studying and have always wondered whether I can ut
 
 <b>Nienke</b>
 
+Music is an integral part of my life. My father is a jazz musician and my mom plays the cello and works for the classical music radio. Naturally, from a young age I have been exposed to different genres of music and music theory. Because of this, I have started listening to music during almost every task imaginable, including studying. Background music has often made tasks easier to complete, but it has also interrupted my studying or my ability to memorize information. By doing this research I am hoping to find out whether studying results might be enhanced by music, and if so whether different genres could produce different results. Maybe after this research I can use music in a way that makes my studying process more efficient.
 
 
-Column {data-width=1550}
+Column {data-width=1550, .tabset}
 -----------------------------------------------------------------------
 
 ### Main Graph
@@ -47,6 +48,11 @@ Column {data-width=1550}
 
 </div>
 
+### Boxplot
+
+<div>
+  <img src="honours boxplots with points.png" width = "700" height = "420" />
+</div>
 
 Column {data-width = 10}
 -----------------------------------------------------------------------
@@ -66,19 +72,32 @@ Column {data-width=550}
 -----------------------------------------------------------------------
 
 
-### Description
-
+### Participants  {.no-padding}
 ```{r}
+valueBox (48, icon ="ion-ios-person", color = "#80ffff")
 ```
 
+### Genres  {.no-padding}
+```{r}
+valueBox (4, icon ="ion-music-note", color = "lightblue")
+```
 
+### Questions  {.no-padding}
+```{r}
+valueBox (15, icon ="ion-android-search", color = "#b3b3ff")
+```
+
+### Videos  {.no-padding}
+```{r}
+valueBox (7, icon ="ion-android-film", color = "#6666ff")
+```
 
 Column {data-width=1350}
 -----------------------------------------------------------------------
 
 ### 
 <div>
-  <img src="methodology.jpg" width = "650" height = "700" />
+  <img src="Methodology.png" width = "650" height = "700" />
 
 </div>
 
@@ -92,7 +111,6 @@ Column {data-width = 10}
 
 ### Music 1
 
-<iframe src="https://open.spotify.com/embed/playlist/7mWbXdE4Hky7MIt8BOjryX?utm_source=generator" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 ### Music 2
 ```{r}
@@ -204,11 +222,28 @@ hist(HpResults$SC13, main = "Wrong Answers", xlab = "Number of Wrong Answers", c
 
 ### <font color="#`000000">Age</font> 
 
+<div>
+  <img src="honours bar chart age.png" width = "400" height = "350" />
+</div>
+
+
 ### <font color="#`000000">Tasks</font> 
+
+<div>
+  <img src="honours bar chart daily tasks.png" width = "400" height = "350" />
+</div>
 
 ### <font color="#`000000">Study</font> 
 
-### <font color="#`000000">Music</font> 
+<div>
+  <img src="honours bar chart field of studies.png" width = "400" height = "350" />
+</div>
+
+### <font color="#`000000">Significance</font> 
+
+<div>
+  <img src="honours bar chart music significance.png" width = "400" height = "350" />
+</div>
 
 Column
 ----------------------------------------------------------------------------------
@@ -264,6 +299,16 @@ Column {data-width=1050}
 -----------------------------------------------------------------------
 
 ### Conclusion & Discussion
+
+The results from our experiment show that overall the respondents were able to memorize the most numbers while listening to Beta Waves. The second best performance was during the control video with no music. These results are both close to each other and show that whether one listens to beta waves or no music does not make a significant difference when it comes to the ability to recall or memorize strings of numbers. 
+
+Our initial hypothesis was that respondents would recall most numbers while listening to no music, and recall a little bit less while listening to beta waves. In other words, we thought that a background noise would disrupt the ability to retain information. We did believe that music with melody and lyrics were going to cause a worse performance than music with no melody and lyrics. Thus, the hypothesis that respondents would do better while listening to no music than while listening to beta waves was false. However, it was correct that respondents would perform better while listening to no music and beta waves, than rock, pop or classical music. 
+
+The respondents performed significantly worse while listening to rock, pop, and classical music. The average score within these genres was close to four correct answers. This went against our initial hypothesis that low-tempo with no lyrics (classical music) would increase the performance of respondents. Before conducting the experiment, we believed that we would see a better performance while listening to classical music than rock or pop. Instead we found that every type of melodic music used in our experiment roughly produced the same results, and decreased the ability to recall strings of numbers
+
+To conclude on the genres, the presence of melody or lyrics on their own do not cause a difference in the ability to recall information. It is rather the two of them combined that worsen the performance of people when it comes to studying. Thus, people do better trying to recall information while listening to a constant, non-changing background noise. No background music worsens the performance, but only by a slight amount. 
+
+Other variables that might have caused people to perform worse or better than others, are age, scientific field or the part music plays in someone's life. Respondents under the age of 18 scored overall 1 to 1,5 points higher than other age groups. Respondents in humanities scored highest out of all the different scientific fields, and people that considered music to be a big part of their lives scored roughly half a point higher than those who do not. Although these variables need to be mentioned it might as well be that the difference in these is caused by the number of respondents we had in each category. We had a sample of 48 usable results. If we have had only one respondent under the age of 18 years old, and they performed well on the task, they could have skewed our results. 
 
 
 Column
