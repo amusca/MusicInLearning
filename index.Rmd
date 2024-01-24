@@ -202,6 +202,14 @@ hist(HpResults$SC13, main = "Wrong Answers", xlab = "Number of Wrong Answers", c
 ```
 
 
+### <font color="#`000000">Age</font> 
+
+### <font color="#`000000">Tasks</font> 
+
+### <font color="#`000000">Study</font> 
+
+### <font color="#`000000">Music</font> 
+
 Column
 ----------------------------------------------------------------------------------
 
@@ -262,3 +270,7 @@ Column
 ----------------------------------------------------------------------
 
 ### Limitation
+
+In the classical music video two numbers were unintentionally repeated twice which could confuse participant and impact their scores for this exercise.
+
+The questionnaire was quite long so some people could have lost focus towards the end
