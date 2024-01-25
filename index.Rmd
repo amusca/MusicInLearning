@@ -1,5 +1,5 @@
 ---
-title: "Data Science of Everyday Music Listening: Project Beta (1)"
+title: "The Beat of Learning: Does study music enhance memory?"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -10,6 +10,7 @@ output:
 library(flexdashboard)
 library(ggplot2)
 library(ggExtra)
+library(hrbrthemes)
 library("readxl")
 HpResults <- read_excel("HpResults.xlsx")
 ```
@@ -18,6 +19,43 @@ Introduction
 =======================================================================
 
 
+Column {.tabset}
+-----------------------------------------------------------------------
+
+### Introduction
+
+<div>Over the last decade we have seen a surge of different study music playlists on popular platforms like Youtube or Spotify. These playlists often include more low-tempo genres such as, jazz, lofi, classical, or no melody music such as beta-waves or white noise. Similarly, the University of Amsterdam has collaborated with Het Concertgebouw (Amsterdam Concert Hall) to provide study sessions while a classical pianist is playing in the background. Thus, different genres are being marketed as more suitable for studying purposes. The Concertgebouw even markets their study sessions with the claim that classical music does, in fact, make you more productive.</div>
+ 
+In our research we wanted to test for ourselves whether the genres marketed as study genres actually aid people in recalling information. This is why we have set up an experiment in which we test how well the respondents memorize strings of numbers while listening to four different genres of music: rock, pop, classical, and beta-waves. By doing this we can find out how well the music that is marketed as enhancing study performance actually works. 
+
+In the subsequent pages, we will delve into the conclusions drawn from our study, discuss the unexpected outcomes, and provide insights into the implications of our findings on the broader understanding of music's impact on cognitive processes. Moreover, we will explore the limitations of our study, shedding light on potential confounding variables that may have influenced participant performance.
+
+### Experimental Design
+
+The experimental design involved the presentation of ten numbers ranging from 1 to 20 on a white screen, each displayed with a 2-second interval for a duration of 3 seconds. This scenario was replicated across five conditions: a control group with no music and four experimental groups exposed to pop, jazz, rock, and beta waves during the numerical presentation. The objective was to examine how different music genres, each with its distinct auditory characteristics, influenced the participants' ability to recall and memorize the numerical sequences.
+
+
+### Boxplot & Bar Chart
+
+The chart representing the mean scores across all test conditions reveals compelling insights into the impact of music genres on recalling numerical values. Notably, the highest mean score was observed in the beta waves group, followed closely by the control group with no music. Surprisingly, rock music secured the third-highest mean score, contrasting expectations given its often intense characteristics. Pop music followed in fourth place, while jazz, typically associated with calming tones, landed in the last position.
+
+We will investigate whether the calming nature of beta waves indeed leads to enhanced recall, as suggested by the higher mean score in that group. To comprehensively understand the significance of our findings, two ANOVA analyses will be carried out. This statistical approach will help us discern if the observed differences in mean scores among the various music genres are statistically significant. The preliminary examination of the results suggests potential significance for beta waves, and rock music compared to the control group, while classical and pop music show trends that require a deeper statistical exploration.
+
+
+
+Column {data-width=1550, .tabset}
+-----------------------------------------------------------------------
+
+### Boxplot
+
+<div>
+  <img src="newBoxplot.png" width = "700" height = "420" />
+</div>
+
+### Bar Chart
+<div>
+  <img src="mainChart.png" width = "700" height = "420" />
+</div>
 
 
 Column {data-width=550}
@@ -43,36 +81,6 @@ On the contrary, when delving into economic methodology, a more philosophical an
 <b>Nienke</b>
 
 Music is an integral part of my life. My father is a jazz musician and my mom plays the cello and works for the classical music radio. Naturally, from a young age I have been exposed to different genres of music and music theory. Because of this, I have started listening to music during almost every task imaginable, including studying. Background music has often made tasks easier to complete, but it has also interrupted my studying or my ability to memorize information. By doing this research I am hoping to find out whether studying results might be enhanced by music, and if so whether different genres could produce different results. Maybe after this research I can use music in a way that makes my studying process more efficient.
-
-
-Column {data-width=1550, .tabset}
------------------------------------------------------------------------
-
-### Main Graph
-
-<div>
-  <img src="mainChart.png" width = "700" height = "420" />
-
-</div>
-
-### Boxplot
-
-<div>
-  <img src="honours boxplots with points.png" width = "700" height = "420" />
-</div>
-
-Column {data-width = 10}
------------------------------------------------------------------------
-
-### Introduction
-
-<b>Main Chart Interpretation</b>
-
-The chart representing the mean scores across all test conditions reveals compelling insights into the impact of music genres on recalling numerical values. Notably, the highest mean score was observed in the beta waves group, followed closely by the control group with no music. Surprisingly, rock music secured the third-highest mean score, contrasting expectations given its often intense characteristics. Pop music followed in fourth place, while jazz, typically associated with calming tones, landed in the last position.
-
-We will investigate whether the calming nature of beta waves indeed leads to enhanced recall, as suggested by the higher mean score in that group. To comprehensively understand the significance of our findings, two ANOVA analyses will be carried out. This statistical approach will help us discern if the observed differences in mean scores among the various music genres are statistically significant. The preliminary examination of the results suggests potential significance for beta waves, and rock music compared to the control group, while classical and pop music show trends that require a deeper statistical exploration.
-
-
 
 
 Methodology
@@ -121,27 +129,32 @@ Column {data-width=1350}
 Column {data-width = 10}
 -----------------------------------------------------------------------
 
-### Experimental Design
+### Beta Waves
 
-The experimental design involved the presentation of ten numbers ranging from 1 to 20 on a white screen, each displayed with a 2-second interval for a duration of 3 seconds. This scenario was replicated across five conditions: a control group with no music and four experimental groups exposed to pop, jazz, rock, and beta waves during the numerical presentation. The objective was to examine how different music genres, each with its distinct auditory characteristics, influenced the participants' ability to recall and memorize the numerical sequences.
+<audio controls>
+  <source src="Honours 3 beta waves.mp4" type="audio/mpeg">
+</audio> 
 
-### Music 1
+### Classical
+
+<audio controls>
+  <source src="Honours 4 classical.mp4" type="audio/mpeg">
+</audio> 
+
+### Pop
+
+<audio controls>
+  <source src="Honours 6 pop.mp4" type="audio/mpeg">
+</audio> 
+
+### Rock
+
+<audio controls>
+  <source src="Honours 7 rock.mp4" type="audio/mpeg">
+</audio> 
 
 
-### Music 2
-```{r}
-```
-
-### Music 3
-```{r}
-```
-
-### Music 4
-```{r}
-```
-
-
-Results
+Charts {data-navmenu="Research" data-orientation=columns}
 =======================================================================
 
 Column {.tabset}
@@ -150,34 +163,36 @@ Column {.tabset}
 ### <font color="#000000">Control</font> 
 
 ```{r}
-  p = ggplot(HpResults, aes(SC2, SC3)) + geom_point()
+  p = ggplot(HpResults, aes(SC2, SC3)) + geom_point( color="black",
+        fill="#69b3a2",
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 1) + theme_ipsum()
   ggMarginal(p, type="histogram")
-```
-
-```{r}
-par(mfrow =c(1,2))
-hist(HpResults$SC2, main = "Correct Answers in Test Video", xlab = "Number of Correct Answers")
-hist(HpResults$SC3, main = "Wrong Answers in Test Video", xlab = "Number of Wrong Answers")
 ```
 
 
 ### <font color="#`000000">Beta Waves</font> 
 ```{r}
-  p = ggplot(HpResults, aes(SC4, SC5)) + geom_point()
+  p = ggplot(HpResults, aes(SC4, SC5)) + geom_point() + geom_violin()
   ggMarginal(p, type="histogram")
 ```
 
 ### <font color="#`000000">Classical Music</font>
 
 ```{r}
-  p = ggplot(HpResults, aes(SC6, SC7)) + geom_point()
+  p = ggplot(HpResults, aes(SC6, SC7), size = "pop") + geom_point(color="black",
+        fill="#69b3a2",
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 1) + theme_ipsum()
   ggMarginal(p, type="histogram")
   
 ```
 
-```{r}
 
-```
 
 ### <font color="#`000000">Pop Music</font> 
 ```{r}
@@ -202,7 +217,6 @@ par(mfrow =c(1,2))
 hist(HpResults$SC2, main = "Correct Answers", xlab = "Number of Correct Answers", col = "#8080ff")
 hist(HpResults$SC3, main = "Wrong Answers", xlab = "Number of Wrong Answers", col = "#99bbff")
 ```
-
 
 
 ### <font color="#`000000">Beta Waves</font> 
@@ -261,30 +275,21 @@ hist(HpResults$SC13, main = "Wrong Answers", xlab = "Number of Wrong Answers", c
   <img src="honours bar chart music significance.png" width = "400" height = "350" />
 </div>
 
-Column
+Column {.tabset}
 ----------------------------------------------------------------------------------
 
-### Description
+### Music Charts Description
 
-<b>Control</b>
+### Other Variables
 
-<b>Beta Waves</b>
 
-<b>Classical Music</b>
-
-<b>Pop Music</b>
-
-<b>Rock Music</b>
-
-Conclusion
+ANOVA {data-navmenu="Research" data-orientation=columns}
 =======================================================================
 
-
-
 Column
-----------------------------------------------------------------------
+------------------------------------------------------------------
 
-### ANOVA
+### Description
 
 For Beta waves vs Control: The p-value is higher than 0.05, indicating no statistically significant difference. 
 
@@ -301,6 +306,9 @@ For Classical vs Beta waves, Pop vs Beta waves, and Rock vs Beta waves: The p-va
 Thus, in this analysis, the genres "Classical", "Pop", and "Rock" show statistically significant differences in scores compared to the Beta waves group.
 
 
+Column
+----------------------------------------------------------------------
+
 ### Table Control
 
 <img src="Table vs Control.png" width = "650" height = "700" />
@@ -309,6 +317,10 @@ Thus, in this analysis, the genres "Classical", "Pop", and "Rock" show statistic
 ### Table Beta Waves
 
 <img src="TableVsBeta.png" width = "650" height = "700" />
+
+
+Conclusion
+=======================================================================
 
 
 Column {data-width=1050}
@@ -339,3 +351,5 @@ The questionnaire was quite long so some people could have lost focus towards th
 In one of the videos there was a pattern that revealed itself after a couple of videos. Several numbers were paired up (5,6,8,9 etc.). This could have caused respondents to perform better during this video. 
 
 As the videos had the same structure, the participants could make strategies like keeping in mind lists of prime numbers' multiples, in order to remember more numbers in the following videos. This fact could reduce the importance of the background music and focus more on the performance of the strategy.
+
+### Bibliography
