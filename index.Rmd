@@ -164,7 +164,7 @@ Column {.tabset}
 
 ```{r}
   p = ggplot(HpResults, aes(SC2, SC3)) + geom_point( color="black",
-        fill="#69b3a2",
+        fill="#8080ff",
         shape=21,
         alpha=0.5,
         size=6,
@@ -175,15 +175,20 @@ Column {.tabset}
 
 ### <font color="#`000000">Beta Waves</font> 
 ```{r}
-  p = ggplot(HpResults, aes(SC4, SC5)) + geom_point() + geom_violin()
+  p = ggplot(HpResults, aes(SC4, SC5)) + geom_point(color="black",
+        fill="#66ffc2",
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 1) + theme_ipsum()
   ggMarginal(p, type="histogram")
 ```
 
 ### <font color="#`000000">Classical Music</font>
 
 ```{r}
-  p = ggplot(HpResults, aes(SC6, SC7), size = "pop") + geom_point(color="black",
-        fill="#69b3a2",
+  p = ggplot(HpResults, aes(SC6, SC7)) + geom_point(color="black",
+        fill="darkblue",
         shape=21,
         alpha=0.5,
         size=6,
@@ -196,13 +201,23 @@ Column {.tabset}
 
 ### <font color="#`000000">Pop Music</font> 
 ```{r}
-  p = ggplot(HpResults, aes(SC10, SC11)) + geom_point()
+  p = ggplot(HpResults, aes(SC10, SC11)) + geom_point(color="black",
+        fill="#dd99ff",
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 1) + theme_ipsum()
   ggMarginal(p, type="histogram")
 ```
 
 ### <font color="#`000000">Rock Music</font> 
 ```{r}
-  p = ggplot(HpResults, aes(SC12, SC13)) + geom_point()
+  p = ggplot(HpResults, aes(SC12, SC13)) + geom_point(color="black",
+        fill="#ff4d4d",
+        shape=21,
+        alpha=0.5,
+        size=6,
+        stroke = 1) + theme_ipsum()
   ggMarginal(p, type="histogram")
 ```
 
