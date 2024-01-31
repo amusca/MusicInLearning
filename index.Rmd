@@ -34,6 +34,7 @@ In our research we wanted to test for ourselves whether the genres marketed as s
 In the subsequent pages, we will delve into the conclusions drawn from our study, discuss the unexpected outcomes, and provide insights into the implications of our findings on the broader understanding of music's impact on cognitive processes. Moreover, we will explore the limitations of our study, shedding light on potential confounding variables that may have influenced participant performance.
 
 
+
 ### Experimental Design
 
 The experimental design involved the presentation of ten numbers ranging from 1 to 20 on a white screen, each displayed with a 2-second interval for a duration of 3 seconds. This scenario was replicated across five conditions: a control group with no music and four experimental groups exposed to pop, classical, rock, and beta waves during the numerical presentation. The objective was to examine how different music genres, each with its distinct auditory characteristics, influenced the participants' ability to recall and memorize the numerical sequences.
@@ -43,7 +44,8 @@ The experimental design involved the presentation of ten numbers ranging from 1 
 
 The chart representing the mean scores across all test conditions reveals compelling insights into the impact of music genres on recalling numerical values. Notably, the highest mean score was observed in the beta waves group, followed closely by the control group with no music. Surprisingly, rock music secured the third-highest mean score, contrasting expectations given its often intense characteristics. Pop music followed in fourth place, while classical, typically associated with calming tones, landed in the last position.
 
-We will investigate whether the calming nature of beta waves indeed leads to enhanced recall, as suggested by the higher mean score in that group. To comprehensively understand the significance of our findings, two ANOVA analyses will be carried out. This statistical approach will help us discern if the observed differences in mean scores among the various music genres are statistically significant. The preliminary examination of the results suggests potential significance for beta waves, and rock music compared to the control group, while classical and pop music show trends that require a deeper statistical exploration.
+We will investigate whether the calming nature of beta waves indeed leads to enhanced recall, as suggested by the higher mean score in that group. To comprehensively understand the significance of our findings, two ANOVA analyses will be carried out. This statistical approach will help us discern if the observed differences in mean scores among the various music genres are statistically significant. The preliminary examination of the results suggests potential significance for all music genres compared to the control group, with beta waves performing better, and classical, pop and rock music performing worse than no music, however these trends require a deeper statistical exploration that is to follow in the “Results” and “Discussion” section.
+
 
 
 
@@ -300,11 +302,26 @@ Column {.tabset}
 
 ### Music Charts Description
 
-<b>Control</b>
+The “Wrong Answers'' histograms indicate how many numbers that were not in a certain video were clicked by the survey participants. By comparing the graphs it can be observed that on average people selected the most wrong answers when listening to classical music, while the average number of wrong answers for other genres were all below 1 and quite close to each other. This could among others be due to one of the points listed later in the “Limitations” section, namely that two numbers have been accidentally repeated in the classical music video which could have confused participants. Thus we can not draw any conclusions from the distribution of wrong answers for the different genres.
 
-Control cathegory re
+In the “Control” sections the results of the exercise in which there was no  background music are displayed.  It can be observed that most people scored between 6 to 8 points and on average the participants picked 0 to 1 numbers that were not in the video.
+
+In the Beta Waves exercise people tended to score better than in the other exercises. The most correct answers were between 4 and 6, but it can also be observed that there are more participants that scored between 6 and 10 points than in other sections. The wrong answer rate was also smaller than in other genres. This is a surprising result, as we initially expected the participants to score the best in the control exercise, as we believed any background noise could be a potential distraction. A more detailed analysis of these findings will follow in the “Discussion” section.
+
+With Classical music playing in the background, most people scored on average 6 points out of 10, but it is also to be noted that most of the participants picked one or two wrong answers. Therefore, it could theoretically be stated that the overall worst performance across genres - taking both the normal scores and the wrong answers into account - was observed for the Classical music exercise. However, due to our limitations we do not wish to draw any such conclusions.
+
+In the Pop music exercise, most participants scored between 4 to 6 out of 10. It can be also observed that most people had at least one wrong answer. Similarly to Pop music, when listening to rock music, the participants scored mostly between 4 to 6 points, but there were way less wrong answers than expected.
+
 
 ### Other Variables
+
+The “Age” section displays the average normal scores by age category. According to the collected data, people younger than 18 years old scored better in our survey than other age categories. It also should be noted that people aged between 18 to 22 and more than 35 scored on average very close to 5 out of 10 points, while people between 23 and 27 years old had a slightly worse performance.
+
+In the “Task” section we present the average scores the participants obtained categorized by whether their daily tasks include more numbers and statistics or reading and writing. Interestingly,  people that do both types of tasks performed better than the others, being closely followed by the ones that mainly engage in numerical or statistical tasks. The participants that selected writing and reading performed visibly worse, which was expected given that the exercises involved the memorization of numbers.
+
+In the “Study” section we show the average scores of the participants according to their field of study. Surprisingly, people who study humanities score way better than those in formal, numerical, or applied sciences. The worst results were obtained by natural science students, being closely followed by social science students.
+
+In the “Significance” section we present the average scores of the participants categorized by how significant music is in their lives. People that indicated “To a large extent” scored the best, while the ones that chose “To some extent” did on average the worst. We cannot draw a conclusion from this bar chart which could state that the significance of music in people’s lives could have helped them getting better scores as the options “To little extent”, “To a very large extent” and “To a large extent” were pretty close to each other.
 
 
 ANOVA {data-navmenu="Research" data-orientation=columns}
@@ -354,7 +371,7 @@ Conclusion
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Conclusion & Discussion
+### Discussion
 
 The results from our experiment show that overall the respondents memorized the most numbers while listening to beta waves. The second best performance was observed during the control video with no music. These results are however both close to each other and show that whether one listens to beta waves or no music does not make a significant difference when it comes to the ability to recall or memorize strings of numbers. Our initial hypothesis was that respondents would recall most numbers while listening to no music, and recall a bit less while listening to beta waves. In other words, we thought that any kind of background noise would disrupt the ability to retain information. Although the results of the beta waves experiment compared to the control group with no music were not deemed significant based on the ANOVA tests, one can observe in the bar graph that while listening to beta waves, participants had a higher average score of about 5.9 compared to 5.2 for the no music experiment. Thus, the hypothesis that respondents would do better while listening to no music than while listening to beta waves seems to be incorrect, although we can not make a conclusive statement due to the high p-value of the ANOVA test. Therefore, we want to highlight that further research is needed to support our findings and to be able to generalize and conclude that beta waves indeed have a positive effect on cognitive functions. 
 
